@@ -1,0 +1,113 @@
+ExpireNote 效期管家隱私權政策
+生效及更新日期：2026 年 11 月 4 日
+提供者：HIN STUDIO
+支援與隱私聯絡：hinsstudio2023@gmail.com
+
+本政策說明 ExpireNote 1.0 目前正式版本設定的資料處理方式。ExpireNote 協助管理物品、庫存與有效期限，不要求建立獨立的 App 帳號。
+
+1. 本機庫存與照片
+你輸入的商品名稱、品牌、條碼、分類、批次、數量、日期、存放位置、備註及庫存異動先儲存在裝置上。相機用於拍攝物品、讀取包裝文字與掃描條碼；從相簿選取照片使用 iOS 系統選取器。文字辨識及物品去背由 Apple Vision 在裝置上處理，不傳送至外部 AI 服務。存入一般商品資料的照片會壓縮並重新編碼。
+
+2. iCloud 與家庭空間
+只有啟用 iCloud 同步後，庫存資料、相關商品照片、異動與同步所需的識別資料才會傳送至 Apple CloudKit 的私人或共享資料庫。App 使用限於本 App 的 Apple 使用者紀錄識別碼辨識同步帳號及處理異動，不取得 Apple 帳號密碼。資料不會寫入公開商品資料庫。
+家庭共享只涉及你選定的家庭空間；獲邀成員依共享權限查看或修改該空間的庫存及商品照片。個人空間不會自動分享。關閉同步會停止 App 的後續同步，不會自動刪除已上傳的資料或其他成員持有的副本。同步需要可用的 iCloud 帳號、網路及儲存空間，Apple 的服務另受其隱私政策約束。
+
+3. 物品櫃
+櫃體選擇、擺放位置、供編輯使用的照片副本、去背展示圖及縮圖儲存在裝置上的獨立資料庫。這些物品櫃資料目前不透過 App 的 iCloud 同步、不與家庭成員同步，也不包含在庫存匯出中。
+物品櫃照片與既有商品紀錄關聯。加入或更換照片時，App 也可能把壓縮後的普通商品照片存入庫存；這份商品照片在啟用 iCloud 後會按照第 2 節同步。從物品櫃移除物品只移除擺放位置，並不刪除庫存商品、批次或照片。刪除庫存商品後，App 會清理對應的物品櫃展示資料。
+
+4. 條碼商品資料查詢
+掃碼後自動查詢預設開啟；你可在「我的 → 條碼商品資料」關閉自動查詢或個別來源。App 先比對目前空間的庫存及本機條碼記憶；沒有本機資料時，依序向已啟用的 Open Facts（Open Food Facts、Open Beauty Facts、Open Pet Food Facts、Open Products Facts）、UPCitemdb、Barcode Lookup 查詢。Barcode Lookup 只有在你設定 API 金鑰時才會使用。
+查詢會傳送條碼、一般請求資訊及網路連線資料（例如 IP 位址）。不會把庫存數量、批次日期、照片、家庭紀錄或位置交給這些商品資料服務。App 的查詢連線不使用登入 Cookie；各服務仍可能依其政策保留連線紀錄。來源資訊會保留於商品備註。Open Facts 資料適用 ODbL，其他來源適用各自條款。
+只有你選擇「加入商品圖片」時，App 才會向來源圖片網站下載圖片；該網站也會收到連線資訊，例如 IP 位址。圖片經壓縮及重新編碼後儲存為商品照片。
+Barcode Lookup 金鑰儲存在此裝置的 Keychain，僅在裝置解鎖時使用，不透過 App 的 iCloud 同步或庫存匯出提供；只傳送至 Barcode Lookup 官方 API。你可在條碼資料設定移除金鑰。刪除 App 不一定清除 Keychain，請先使用 App 內的移除功能。
+若你點擊外部 Google 搜尋入口，App 會開啟以該條碼為查詢內容的 Google 網頁。這是你主動開啟的外部搜尋，搜尋結果不會自動填入商品。Google 及使用的瀏覽器依各自政策處理網頁連線資料；App 不會在此操作上傳你的庫存或照片。
+
+5. 本機條碼記憶
+「儲存時記住商品條碼」預設開啟，可在條碼資料設定或商品表單關閉。商品成功儲存後，App 會在本機獨立檔案保存你確認的名稱、品牌、分類、單位、條碼、來源資訊及資料關聯識別碼，依空間區分，總計最多保留最近 2,000 筆。
+記憶不包含數量、批次、有效期限、照片、位置或私人備註，不透過 App 的 iCloud 同步或庫存匯出提供，也不會上傳至商品資料服務。刪除庫存商品不會自動刪除其條碼記憶。你可在「條碼商品資料 → 記住的商品資料」修改、逐筆刪除，或清除目前空間的全部記憶。
+
+6. 選用的智慧位置提醒與購物清單
+只有你選用功能並授權後，App 才使用 Core Location 取得位置及監測商店或自願設定的住家附近區域。背景提醒需要「永遠」及精確位置權限。你可在 App 關閉智慧位置提醒，或在 iOS 設定撤銷定位權限。
+搜尋商店或附近地點時，搜尋文字與所選或目前搜尋區域會交由 Apple 地圖處理。不將定位傳送至 HIN STUDIO 自建伺服器，不作廣告定向，不建立完整移動軌跡。
+商店座標、選填地址、購物清單、補貨門檻及各店最近提醒時間保存在本機獨立資料庫。快取保留一個粗略搜尋中心及最近商店結果；提醒冷卻紀錄會在後續提醒時清理 90 天以前的時間，不記錄每次進出。
+你可在「自訂商店」刪除地點；關閉功能會停止本功能的區域監測。商店、購物清單及補貨設定不與家庭同步、不包含在庫存匯出中，該儲存目錄排除系統備份。刪除商店後可能保留該識別碼的最近冷卻時間，以免重新加入時立即重複提醒。
+
+7. 提醒、小工具、匯出與備份
+到期及位置提醒在裝置上排程。主畫面小工具讀取 App Group 中的庫存摘要，不另向商品服務查詢。JSON 匯出可包含庫存、照片及待同步異動；CSV 匯出包含商品與批次欄位。匯出檔案的保存地點及分享對象由你決定。
+首次雲端同步前，App 會建立本機安全備份，可能保留當時的庫存、照片及待同步異動。這份安全備份排除系統備份，並不會隨後續單筆商品刪除而自動改寫。除明確排除的資料外，裝置資料是否納入 Apple 系統備份取決於你的系統設定；「不透過 App 同步」不表示一定不會出現在裝置備份中。
+
+8. 廣告與追蹤
+目前 ExpireNote 1.0 的正式版本設定關閉廣告。雖然 App 包含 Google AdMob 與 Google User Messaging Platform 程式庫，App 在此設定下不啟動廣告 SDK、不執行廣告同意訊息流程，也不提出廣告請求。App 不要求 App Tracking Transparency 追蹤權限。
+開發測試版本可能顯示 Google 測試廣告，與此正式版本設定不同。若未來變更廣告或資料處理方式，必須先更新本政策、App Store 隱私揭露及適用的同意設定；本政策不代表廣告已啟用。
+
+9. 保存、刪除與你的選擇
+你可編輯或刪除庫存商品、照片、條碼記憶及自訂地點。刪除商品會解除使用中的照片關聯並更新提醒；異動歷史、刪除標記及既有備份可能仍保留，以支援同步、衝突處理與資料復原。雲端刪除需在後續成功同步後反映，並可能因網路或儲存空間問題延後。
+離開家庭或移除被撤銷的家庭庫存快取會移除該裝置對應的家庭庫存快取；不等同於刪除其他成員的副本或你已匯出的檔案。刪除 App 不會保證刪除 iCloud、Keychain、其他裝置或你保存的備份。你可透過 Apple 提供的 iCloud 與裝置備份管理功能處理雲端或系統備份資料，並自行刪除匯出檔案。
+如果你寄信給支援信箱，我們會收到你主動提供的電子郵件地址、訊息與附件，並用於處理該支援或隱私請求。請勿傳送不必要的敏感資料。支援由 Google Gmail 處理郵件服務；HIN STUDIO 無法直接讀取你的本機庫存或私人 iCloud 資料庫。
+
+10. 聯絡與相關政策
+支援或隱私問題：hinsstudio2023@gmail.com
+Apple 隱私政策：https://www.apple.com/legal/privacy/
+Google 隱私政策：https://policies.google.com/privacy
+Open Facts 資料及條款：https://world.openfoodfacts.org/data
+UPCitemdb：https://www.upcitemdb.com/
+Barcode Lookup：https://www.barcodelookup.com/terms-and-conditions
+
+================================================================
+
+ExpireNote Privacy Policy
+Effective and last updated: November 4, 2026
+Provider: HIN STUDIO
+Support and privacy contact: hinsstudio2023@gmail.com
+
+This policy describes the current production configuration of ExpireNote 1.0. ExpireNote helps you manage household items, stock and expiry dates. It does not require a separate app account.
+
+1. Local inventory and photos
+Item names, brands, barcodes, categories, batches, quantities, dates, storage locations, notes and inventory changes are initially stored on your device. The camera is used for item photos, package text and barcode scanning. Photo-library selection uses the iOS system picker. Text recognition and foreground removal use Apple Vision on your device, without sending photos to an external AI service. Photos saved in the ordinary inventory are compressed and re-encoded.
+
+2. iCloud and household spaces
+Only after you enable iCloud sync does the app send inventory records, associated item photos, changes and identifiers needed for synchronization to Apple's private or shared CloudKit databases. The app uses an app-scoped Apple user record identifier to distinguish the sync account and process changes; it does not receive your Apple Account password. Your inventory is not written to a public product database.
+Household sharing applies only to the household space you select. Invited members can view or change that space's inventory and item photos according to their permissions. Your personal space is not automatically shared. Turning sync off stops subsequent app synchronization; it does not automatically delete uploaded records or copies held by other members. Sync requires an available iCloud account, network connection and storage. Apple's services are also governed by its privacy policy.
+
+3. My Cabinet
+Cabinet selection, item placement, an image copy for editing, background-removed display images and thumbnails are stored in a separate local database. These cabinet records are currently not synchronized through the app's iCloud feature, shared with household members or included in inventory exports.
+Cabinet images are associated with existing inventory items. Adding or replacing a cabinet image may also save a compressed ordinary item photo to inventory; that ordinary photo follows the iCloud behavior in section 2. Removing an item from a cabinet removes its placement, not its inventory record, batches or photos. Deleting the inventory item causes the app to clean up its associated cabinet display records.
+
+4. Barcode product lookup
+Automatic lookup after scanning is enabled by default. You can turn it or individual sources off under My → Barcode product data. The app first checks the current space's inventory and locally remembered barcodes. If no local information is available, it queries enabled Open Facts sources (Open Food Facts, Open Beauty Facts, Open Pet Food Facts and Open Products Facts), UPCitemdb and Barcode Lookup in sequence. Barcode Lookup is used only if you configure an API key.
+Requests contain the barcode, ordinary request information and network connection data such as your IP address. The app does not send inventory quantities, batch dates, photos, household records or location to these product services. Its lookup connections do not use login cookies; service providers may retain connection records under their own policies. Source attribution is retained in item notes. Open Facts data is subject to ODbL; other providers have their own terms.
+Only if you choose to add a product image does the app download it from the source image website, which also receives connection information such as your IP address. The downloaded image is compressed and re-encoded before being saved as an item photo.
+Your Barcode Lookup key is stored in this device's Keychain and can be used only while the device is unlocked. It is not included in the app's iCloud synchronization or inventory exports and is sent only to the official Barcode Lookup API. You can remove it in barcode settings. Deleting the app does not necessarily remove Keychain entries; use the in-app removal control first.
+If you choose the external Google search link, the app opens a Google web search for that barcode. This is a search you initiate; results are not automatically applied to an item. Google and your browser handle web connection information under their respective policies. The app does not upload your inventory or photos for this action.
+
+5. Locally remembered barcodes
+Remembering a product barcode when saving is enabled by default and can be disabled in barcode settings or the item form. After a successful item save, a separate local file retains your confirmed name, brand, category, unit, barcode, attribution and record-association identifiers. Records are separated by space, with a total limit of the most recent 2,000 entries.
+This memory excludes quantities, batches, expiry dates, photos, location and private notes. It is not included in the app's iCloud synchronization or inventory exports and is not uploaded to product services. Deleting an inventory item does not automatically delete its remembered barcode. Under Barcode product data → Remembered product data, you can edit entries, delete individual entries or clear all entries for the current space.
+
+6. Optional location reminders and shopping lists
+The app uses Core Location to obtain location and monitor regions near stores or an optional home location only after you choose the feature and grant permission. Background reminders require Always and Precise Location permissions. You can turn smart location reminders off in the app or revoke location permission in iOS Settings.
+Store or nearby-place searches send the search text and selected or current search region to Apple Maps. Location is not sent to a HIN STUDIO server, used for ad targeting or recorded as a complete movement history.
+Store coordinates, optional addresses, shopping lists, replenishment thresholds and the latest reminder time for each store are held in a separate local database. A cache retains one coarse search center and recent store results. Reminder cooldown records older than 90 days are cleaned during subsequent reminder processing; the app does not record every region entry or exit.
+You can delete places under Custom stores. Turning the feature off stops its region monitoring. Store, shopping-list and replenishment data are not household-synchronized or included in inventory exports; their storage directory is excluded from system backup. Deleting a store may retain its last cooldown timestamp to prevent an immediate repeated reminder if the same place is added again.
+
+7. Reminders, widgets, exports and backups
+Expiry and location notifications are scheduled on the device. The Home Screen widget reads an inventory summary through the app's shared App Group and does not independently query product services. JSON exports can include inventory, photos and pending synchronization changes; CSV exports contain item and batch fields. You choose where exported files are saved and whom to share them with.
+Before the first cloud synchronization, the app creates a local safety backup that may retain the inventory, photos and pending changes present at that time. That backup is excluded from system backup and is not rewritten when individual items are subsequently deleted. Except for explicitly excluded data, inclusion in Apple's device backups depends on your system settings. Data not synchronized by the app may still appear in a device backup.
+
+8. Advertising and tracking
+Advertising is disabled in the current production configuration of ExpireNote 1.0. Although the app includes Google AdMob and Google User Messaging Platform libraries, under this configuration the app does not start the advertising SDK, run the advertising consent-message flow or make advertising requests. The app does not request App Tracking Transparency permission.
+Development test builds may show Google test advertisements and differ from this production configuration. Any future change to advertising or data handling requires updating this policy, App Store privacy disclosures and applicable consent settings first. This policy does not mean that advertising is currently enabled.
+
+9. Retention, deletion and your choices
+You can edit or delete inventory items, photos, remembered barcodes and custom places. Deleting an item removes its active photo associations and updates reminders; change history, deletion markers and existing backups may remain for synchronization, conflict handling and recovery. Cloud deletion is reflected after a successful subsequent sync and may be delayed by connection or storage problems.
+Leaving a household or removing revoked household inventory cache removes the corresponding inventory cache on that device; it does not delete other members' copies or your exported files. Deleting the app does not guarantee deletion from iCloud, Keychain, other devices or backups you retain. You can use Apple's iCloud and device-backup management controls to manage cloud or system-backup data and delete exported files yourself.
+If you email support, we receive the email address, message and attachments you choose to provide and use them to handle that support or privacy request. Please do not send unnecessary sensitive information. Support email is handled through Google Gmail. HIN STUDIO cannot directly read your local inventory or private iCloud database.
+
+10. Contact and related policies
+Support or privacy questions: hinsstudio2023@gmail.com
+Apple privacy policy: https://www.apple.com/legal/privacy/
+Google privacy policy: https://policies.google.com/privacy
+Open Facts data and terms: https://world.openfoodfacts.org/data
+UPCitemdb: https://www.upcitemdb.com/
+Barcode Lookup: https://www.barcodelookup.com/terms-and-conditions
