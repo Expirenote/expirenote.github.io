@@ -20,7 +20,7 @@ ExpireNote 效期管家隱私權政策
 4. 條碼商品資料查詢
 掃碼後自動查詢預設開啟；你可在「我的 → 條碼商品資料」關閉自動查詢或個別來源。App 先比對目前空間的庫存及本機條碼記憶；沒有本機資料時，依序向已啟用的 Open Facts（Open Food Facts、Open Beauty Facts、Open Pet Food Facts、Open Products Facts）、UPCitemdb、Barcode Lookup 查詢。Barcode Lookup 只有在你設定 API 金鑰時才會使用。
 查詢會傳送條碼、一般請求資訊及網路連線資料（例如 IP 位址）。不會把庫存數量、批次日期、照片、家庭紀錄或位置交給這些商品資料服務。App 的查詢連線不使用登入 Cookie；各服務仍可能依其政策保留連線紀錄。來源資訊會保留於商品備註。Open Facts 資料適用 ODbL，其他來源適用各自條款。
-只有你選擇「加入商品圖片」時，App 才會向來源圖片網站下載圖片；該網站也會收到連線資訊，例如 IP 位址。圖片經壓縮及重新編碼後儲存為商品照片。
+本版不提供從商品資料庫下載或匯入新的商品圖片。Open Facts、UPCitemdb 及已設定金鑰的 Barcode Lookup 仍可查詢條碼的名稱、品牌等文字資料。你可拍攝商品照片或從相簿選取照片；先前已存入的商品照片不會因這項限制而刪除，仍按一般商品照片的儲存及同步設定處理。
 Barcode Lookup 金鑰儲存在此裝置的 Keychain，僅在裝置解鎖時使用，不透過 App 的 iCloud 同步或庫存匯出提供；只傳送至 Barcode Lookup 官方 API。你可在條碼資料設定移除金鑰。刪除 App 不一定清除 Keychain，請先使用 App 內的移除功能。
 若你點擊外部 Google 搜尋入口，App 會開啟以該條碼為查詢內容的 Google 網頁。這是你主動開啟的外部搜尋，搜尋結果不會自動填入商品。Google 及使用的瀏覽器依各自政策處理網頁連線資料；App 不會在此操作上傳你的庫存或照片。
 
@@ -79,7 +79,7 @@ Cabinet images are associated with existing inventory items. Adding or replacing
 4. Barcode product lookup
 Automatic lookup after scanning is enabled by default. You can turn it or individual sources off under My → Barcode product data. The app first checks the current space's inventory and locally remembered barcodes. If no local information is available, it queries enabled Open Facts sources (Open Food Facts, Open Beauty Facts, Open Pet Food Facts and Open Products Facts), UPCitemdb and Barcode Lookup in sequence. Barcode Lookup is used only if you configure an API key.
 Requests contain the barcode, ordinary request information and network connection data such as your IP address. The app does not send inventory quantities, batch dates, photos, household records or location to these product services. Its lookup connections do not use login cookies; service providers may retain connection records under their own policies. Source attribution is retained in item notes. Open Facts data is subject to ODbL; other providers have their own terms.
-Only if you choose to add a product image does the app download it from the source image website, which also receives connection information such as your IP address. The downloaded image is compressed and re-encoded before being saved as an item photo.
+This release does not download or import new product images from product databases. Open Facts, UPCitemdb and Barcode Lookup with a configured API key remain available for barcode text details such as names and brands. You can take your own product photos or select them from your photo library. Previously saved product photos are not deleted by this restriction and continue to follow the ordinary item-photo storage and synchronization settings.
 Your Barcode Lookup key is stored in this device's Keychain and can be used only while the device is unlocked. It is not included in the app's iCloud synchronization or inventory exports and is sent only to the official Barcode Lookup API. You can remove it in barcode settings. Deleting the app does not necessarily remove Keychain entries; use the in-app removal control first.
 If you choose the external Google search link, the app opens a Google web search for that barcode. This is a search you initiate; results are not automatically applied to an item. Google and your browser handle web connection information under their respective policies. The app does not upload your inventory or photos for this action.
 
