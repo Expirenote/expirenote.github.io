@@ -1,9 +1,9 @@
 ExpireNote 效期管家隱私權政策
-生效及更新日期：2026 年 11 月 5 日
+生效及更新日期：2026 年 11 月 10 日
 提供者：HIN STUDIO
 支援與隱私聯絡：hinsstudio2023@gmail.com
 
-本政策說明 ExpireNote 1.0 個人使用首版設定的資料處理方式。ExpireNote 協助管理物品、庫存與有效期限，不要求建立獨立的 App 帳號。
+本政策說明 ExpireNote 個人使用版本的資料處理方式；第 8 節區分 1.0 無廣告版及啟用廣告的 1.0.1 及後續版本。ExpireNote 協助管理物品、庫存與有效期限，不要求建立獨立的 App 帳號。
 
 1. 本機庫存與照片
 你輸入的商品名稱、品牌、條碼、分類、批次、數量、日期、存放位置、備註及庫存異動先儲存在裝置上。相機用於拍攝物品、讀取包裝文字與掃描條碼；從相簿選取照片使用 iOS 系統選取器。文字辨識及物品去背由 Apple Vision 在裝置上處理，不傳送至外部 AI 服務。存入一般商品資料的照片會壓縮並重新編碼。
@@ -39,8 +39,12 @@ Barcode Lookup 金鑰儲存在此裝置的 Keychain，僅在裝置解鎖時使�
 首次雲端同步前，App 會建立本機安全備份，可能保留當時的庫存、照片及待同步異動。這份安全備份排除系統備份，並不會隨後續單筆商品刪除而自動改寫。除明確排除的資料外，裝置資料是否納入 Apple 系統備份取決於你的系統設定；「不透過 App 同步」不表示一定不會出現在裝置備份中。
 
 8. 廣告與追蹤
-目前 ExpireNote 1.0 的正式版本設定關閉廣告。雖然 App 包含 Google AdMob 與 Google User Messaging Platform 程式庫，App 在此設定下不啟動廣告 SDK、不執行廣告同意訊息流程，也不提出廣告請求。App 不要求 App Tracking Transparency 追蹤權限。
-開發測試版本可能顯示 Google 測試廣告，與此正式版本設定不同。若未來變更廣告或資料處理方式，必須先更新本政策、App Store 隱私揭露及適用的同意設定；本政策不代表廣告已啟用。
+ExpireNote 1.0（建置 4）的正式版本關閉廣告，不啟動廣告 SDK 或廣告同意流程，也不提出廣告請求。以下說明適用於啟用廣告的 1.0.1 及後續版本；更新本政策本身不會開啟舊版 App 的廣告。
+啟用廣告的版本在首頁及新增頁顯示 Google AdMob 橫幅廣告，使用 Google User Messaging Platform（UMP）處理適用地區的同意及隱私選項。App 將廣告請求設定為非個人化廣告，關閉發布商第一方 ID，不要求 App Tracking Transparency 追蹤權限，也不取得 IDFA。
+即使是非個人化廣告，Google SDK 仍可能蒐集 IP 位址及由其推估的大概位置、裝置與 App 識別資訊、廣告曝光與互動、使用資訊，以及當機、效能和其他診斷資料，用於提供和衡量廣告、分析、頻率限制及防範詐騙。非個人化不代表不蒐集資料。Google 依其隱私權政策及廣告服務規則處理與保留這些資料。
+App 不把庫存內容、條碼、商品照片、批次與期限、購物清單、家庭識別資料或精確位置附加到廣告請求。條碼查詢、iCloud 及 Apple 地圖的處理方式仍依本政策其他章節說明，與廣告分開。
+App 每次符合顯示條件的啟動會更新 UMP 狀態，在需要時先顯示同意訊息，只有 UMP 允許請求廣告後才啟動廣告 SDK。你可在訊息中拒絕或調整同意；在適用時，也可從「我的 → 廣告與隱私 → 廣告隱私選項」重新開啟選擇。依地區、選擇與 Google 規則，可能只顯示有限廣告或不顯示廣告。拒絕同意、沒有網路或廣告載入失敗，不會阻止核心庫存功能。
+開發與自動化測試使用 Google 官方測試廣告或停用廣告，不用正式廣告產生測試收益。日後若變更廣告處理方式，會更新本政策及相關揭露，並在需要時重新取得同意。
 
 9. 保存、刪除與你的選擇
 你可編輯或刪除庫存商品、照片、條碼記憶及自訂地點。刪除商品會解除使用中的照片關聯並更新提醒；異動歷史、刪除標記及既有備份可能仍保留，以支援同步、衝突處理與資料復原。雲端刪除需在後續成功同步後反映，並可能因網路或儲存空間問題延後。
@@ -58,11 +62,11 @@ Barcode Lookup：https://www.barcodelookup.com/terms-and-conditions
 ================================================================
 
 ExpireNote Privacy Policy
-Effective and last updated: November 5, 2026
+Effective and last updated: November 10, 2026
 Provider: HIN STUDIO
 Support and privacy contact: hinsstudio2023@gmail.com
 
-This policy describes the personal-use first-release configuration of ExpireNote 1.0. ExpireNote helps you manage household items, stock and expiry dates. It does not require a separate app account.
+This policy describes the data practices of personal-use releases of ExpireNote. Section 8 distinguishes the ad-free 1.0 release from advertising-enabled releases of 1.0.1 and later. ExpireNote helps you manage household items, stock and expiry dates. It does not require a separate app account.
 
 1. Local inventory and photos
 Item names, brands, barcodes, categories, batches, quantities, dates, storage locations, notes and inventory changes are initially stored on your device. The camera is used for item photos, package text and barcode scanning. Photo-library selection uses the iOS system picker. Text recognition and foreground removal use Apple Vision on your device, without sending photos to an external AI service. Photos saved in the ordinary inventory are compressed and re-encoded.
@@ -98,8 +102,12 @@ Expiry and location notifications are scheduled on the device. The Home Screen w
 Before the first cloud synchronization, the app creates a local safety backup that may retain the inventory, photos and pending changes present at that time. That backup is excluded from system backup and is not rewritten when individual items are subsequently deleted. Except for explicitly excluded data, inclusion in Apple's device backups depends on your system settings. Data not synchronized by the app may still appear in a device backup.
 
 8. Advertising and tracking
-Advertising is disabled in the current production configuration of ExpireNote 1.0. Although the app includes Google AdMob and Google User Messaging Platform libraries, under this configuration the app does not start the advertising SDK, run the advertising consent-message flow or make advertising requests. The app does not request App Tracking Transparency permission.
-Development test builds may show Google test advertisements and differ from this production configuration. Any future change to advertising or data handling requires updating this policy, App Store privacy disclosures and applicable consent settings first. This policy does not mean that advertising is currently enabled.
+The production release of ExpireNote 1.0 (build 4) has advertising disabled: it does not start the advertising SDK or consent flow or make advertising requests. The following applies to advertising-enabled releases of version 1.0.1 and later. Updating this policy alone does not enable advertisements in an older app.
+Advertising-enabled releases display Google AdMob banners on Home and Add. Google User Messaging Platform (UMP) manages applicable regional consent and privacy choices. The app configures requests for non-personalized ads, disables the publisher first-party ID, does not request App Tracking Transparency permission and does not obtain the IDFA.
+Non-personalized ads can still involve data collection by Google SDKs, including IP addresses and approximate location inferred from them, device and app identifiers, ad impressions and interactions, usage information, and crash, performance and other diagnostic data. Google uses these data to serve and measure advertising, perform analytics, limit frequency and prevent fraud. Non-personalized does not mean no data collection. Google processes and retains these data under its privacy policy and advertising service rules.
+The app does not attach inventory content, barcodes, product photos, batches or expiry dates, shopping lists, household identifiers or precise location to ad requests. The separate processing involved in catalog lookup, iCloud and Apple Maps remains described in the other sections of this policy.
+On each eligible launch, the app updates UMP status and presents a consent message when required. The advertising SDK starts only after UMP permits ad requests. You can refuse or manage consent in that message and, where applicable, reopen your choices under My → Ads & privacy → Advertising privacy choices. Depending on your region, choices and Google's rules, limited ads or no ads may be served. Refusing consent, being offline or an ad-load failure does not block core inventory features.
+Development and automated tests use Google's official test ads or disable advertising; they do not generate test revenue from production ads. Future changes to advertising data handling will be reflected in this policy and related disclosures, with consent requested again where required.
 
 9. Retention, deletion and your choices
 You can edit or delete inventory items, photos, remembered barcodes and custom places. Deleting an item removes its active photo associations and updates reminders; change history, deletion markers and existing backups may remain for synchronization, conflict handling and recovery. Cloud deletion is reflected after a successful subsequent sync and may be delayed by connection or storage problems.
